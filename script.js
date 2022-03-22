@@ -921,8 +921,8 @@ class HAvailabilities{
         return this;
     }
     static intersect(first,second){
-        var f = first.clone()
-        var s = second.clone()
+        var f = first.clone().optimize()
+        var s = second.clone().optimize()
         var i = 0, j = 0;
          
         var n = f.length, m = s.length;
